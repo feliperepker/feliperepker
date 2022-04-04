@@ -2,6 +2,6 @@
 
 ### Hi there 👋
 
-- 🔭 I’m currently working on Scania
-- 🌱 I’m currently learning about web development at EBAC.
+- 🔭 I’m currently working at Scania
+- 🌱 Studyng about web development and Python at EBAC.
 
