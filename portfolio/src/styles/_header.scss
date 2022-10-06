@@ -6,10 +6,22 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  h1{
-    color: $secondaryclr;
+  .logo{
+    display: flex;
     margin-left: 10%;
     font-size: 1.6em;
+    color: white; 
+  
+    #left-logo{
+      font-size: 1.2em;
+      transform:  rotate(-45deg) translate(-10px, 8px);
+      color: yellow;
+    }
+    #right-logo{
+      font-size: 1.2em;
+      transform:  rotate(-45deg) translate(12px, -18px);
+      color: yellow;
+    }
   }
   ul{
     display: flex;
