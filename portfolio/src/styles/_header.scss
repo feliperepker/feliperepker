@@ -6,22 +6,29 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  
   .logo{
     display: flex;
     margin-left: 10%;
-    font-size: 1.6em;
-    color: white; 
+    font-size: 2em;
+    color: $contrastclr;
+    font-family: 'Gemunu Libre', sans-serif;
   
     #left-logo{
-      font-size: 1.2em;
-      transform:  rotate(-45deg) translate(-10px, 8px);
-      color: yellow;
+      
+      font-size: 1em;
+      transform:  rotate(-45deg) translate(-14px, 13px);
+      color: $secondaryclr;
     }
+    
     #right-logo{
-      font-size: 1.2em;
-      transform:  rotate(-45deg) translate(12px, -18px);
-      color: yellow;
+     
+      font-size: 1em;
+      transform:  rotate(-45deg) translate(13px, -13px);
+      color: $secondaryclr;
     }
+    
   }
   ul{
     display: flex;
@@ -32,7 +39,201 @@ header{
     a{
       text-decoration: none;
       color: $contrastclr;
-      
+      transition: ease 0.5s;
     }
+    a:hover{
+      color: $secondaryclr;
+    }
+  }
+}
+.logo:hover{
+  cursor: pointer;
+  #left-logo{
+    animation: logo-animation-left 0.4s ease-in-out ; 
+  }
+  #right-logo{
+    animation: logo-animation-right 0.4s ease-in-out;
+  }
+}
+
+
+
+@media (max-width: 1000px){
+
+  nav{
+    display: none;
+  }
+  .hamburguer-menu{
+    width: 40px;
+    height: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  #ham1{ 
+    height: 2.4px;
+    width: 60%;
+    background-color: white;
+    animation: x-to-ham ease-in 1s forwards;
+  }
+  #ham2{
+    height: 2.4px;
+    width: 100%;
+    background-color: white;
+    animation: y-to-ham ease-in 1s forwards;
+  }
+  
+  .menu-section.on{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.623);
+        width: 60vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          :last-child{
+            margin-right: 0px;
+           }
+          }
+            a{
+                transition-duration: 0.5s;
+                line-height: 3rem;
+            }
+  }
+        .hamburguer-menu{
+          position: absolute;
+          right: 0;
+          top: 25px;
+
+          #ham1{
+            animation: ham-to-x 1s ease-in forwards; 
+            
+        }
+        #ham2{
+            animation: ham-to-y 1s ease-in forwards;
+        }
+}
+}
+
+}
+
+
+@keyframes ham-to-y {
+  10%{
+      transform: translateY(-100%);
+  }
+  30%{
+      transform: translateY(-300%);
+      width: 50% ;
+  }
+  60%{
+      transform: translateY(-100%);
+      width: 70% 
+  }
+  90%{
+      transform: translateY(-100%);
+      width: 70% 
+  }
+  100%{
+      transform: rotate(45deg) translate(-8px, -4px);
+      width: 70%;
+  }
+}
+@keyframes ham-to-x{
+  10%{
+      transform: translateY(100%);
+  }
+  30%{
+      transform: translateY(300%);
+      width: 50% ;
+  }
+  60%{
+      transform: translateY(100%);
+      width: 70% 
+  }
+  90%{
+      transform: translateY(100%);
+      width: 70% 
+  }
+  100%{
+      transform: translateY(100%);
+      width: 70%;
+      transform: rotate(-45deg) translate(-8px, 4px);
+
+  }
+}
+@keyframes x-to-ham{
+  0%{
+      width: 70%;
+      transform: rotate(-45deg) translate(-7px, 3px);
+  }
+
+  30%{
+      transform: translateY(300%);
+      width: 50% ;
+  }
+  60%{
+      transform: translateY(100%);
+      width: 70% 
+  }
+  90%{
+      transform: translateY(100%);
+      width: 70% 
+  }
+  100%{
+      width: 60%;
+      
+  }
+}
+@keyframes y-to-ham {
+  0%{
+      transform: rotate(45deg) translate(-7px, -4px);
+      width: 70%;
+  }
+ 
+  30%{
+      transform: translateY(-300%);
+      width: 50% ;
+  }
+  60%{
+      transform: translateY(-100%);
+      width: 70% 
+  }
+  90%{
+      transform: translateY(-100%);
+      width: 70% 
+  }
+  100%{
+      width: 100%;
+  }
+}
+
+@keyframes logo-animation-left {
+  0%{
+    transform:  rotate(-45deg) translate(-10px, 8px);
+  }
+  100%{
+    transform:  rotate(135deg) translate(-43px, -20px);
+  }
+}
+
+@keyframes logo-animation-right {
+  0%{
+    transform:  rotate(-45deg) translate(12px, -18px);
+  }
+  100%{
+    transform:  rotate(134deg) translate(43px, 15px);
   }
 }

@@ -1,0 +1,82 @@
+main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 20px;
+  font-family: 'Gemunu Libre', sans-serif;
+  font-weight: 200;
+
+  .container-img{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20% 20% 50% 50%;
+    z-index: 2;
+  
+    img{
+      height: 400px;
+      width: 400px;
+      margin-right: 400px;
+      object-fit: cover;
+      transform: scale(1.5);
+    }
+  }
+}
+.wrapper{
+  display: inline-flex;
+
+  .static-text{
+    font-size: 40px;
+    color: $contrastclr;
+  }
+  .dynamic-text{
+    margin-left: 10px;
+    font-size: 40px;
+    color: $secondaryclr;
+
+    span{
+      position: relative;
+    }
+  }
+}
+span::after{
+  content: "";
+  position: absolute;
+  left: 0; 
+  height: 100%;
+  background: $primaryclr;
+  width: 100%;
+  border-left: 2px solid $contrastclr;
+  animation: typing 2s steps(20) forwards, pulse 0.8s infinite;
+ 
+}
+@keyframes typing {
+  100%{
+    left: 90%;
+    margin: 0 -35px 0 35px;
+  }
+}
+@keyframes pulse {
+  100%{
+    border-left: 2px transparent;
+  }
+}
+.main-container{
+  .hello {
+    font-size: 40px;
+    color: $contrastclr; 
+    margin-bottom: 10px;
+  }
+  .my-name{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: rgb(236, 108, 4);
+    margin-left: 10px;
+  }
+}
+.name-container{
+  display: flex;
+  align-items: baseline;
+}

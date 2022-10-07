@@ -1,17 +1,18 @@
 @charset 'UTF-8';
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap');
 //variables
-$primaryclr:black;
-$secondaryclr: yellow;
+$primaryclr:rgb(54, 54, 54);
+$secondaryclr: rgb(40, 201, 174);
 $contrastclr:white;
 $fontfamily:'Inter', sans-serif;
 
 //scss imports
 @import 'reset';
 @import 'header';
-
+@import 'main';
 body{
   font-family: $fontfamily;
+  background-color: $primaryclr;
 }
