@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <link rel="stylesheet" href="src/styles/style.scss">
+    <script src="https://kit.fontawesome.com/179185e38c.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -13,7 +14,7 @@
           <h1>FR</h1>
           <h1 id="right-logo">&#129174;</h1>
       </div>
-      <div class="menu-section on">
+      <div class="menu-section">
         <div class="hamburguer-menu">
           <div id="ham1"></div>
           <div id="ham2"></div>
@@ -28,10 +29,10 @@
         </nav>
       </div>
     </header>
-    <main>
-      <div class="main-container">
+    <main class="init-hidden">
+      <div class="main-container ">
         <div class="name-container">
-          <h1 class="hello">Hello, I'am</h1>
+          <h1 class="hello">Hello, I am</h1>
           <h1 class="my-name">Felipe Repker</h1>
         </div>
         <div class="wrapper">
@@ -40,17 +41,52 @@
             <p><span>Fullstack Development Student.</span></p>
           </div>
         </div>
-        <div>
-          <a href="#"></a>
-          <a href="#"></a>
+        <div class="container-icons">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
         </div>
       </div> 
       <div class="container-img">
         <img src="./src/assets/bf00c2aa-4f85-4a65-ac6e-92845445f273.jpg" alt="">
       </div>
     </main>
-
-    
+      <section class="init-hidden about">
+        <h2>About</h2>
+        <p>I have 25 years old, living in São Bernardo do Campo with my wife and my son Augusto.</p>
+        <p>I love coffe, games and watching chess. Used to do magic tricks when younger, I was kind of good at it.</p>
+        <p>Studying Fullstack Web Development with Python and MySQL in EBAC and studying React as my main Web Framework. I am familiar with .NET CORE too.</p>
+        <p>Working in a area with focous on digitalization in Logistics.</p>
+        <img src="https://i.pinimg.com/originals/1e/b7/74/1eb774d223c04aa542d5190519ba2a13.png" alt="">
+      </section>
+      <section class="init-hidden skills">
+        <h2>Skills</h2>
+        <div class="container-skills">
+          <div class="skills-card">
+            <h4>HTML5</h4>
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="skills-card">
+            <h4>CSS3</h4>
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <div class="skills-card">
+            <h4>SASS</h4>
+            <i class="fa-brands fa-sass"></i>
+          </div>
+          <div class="skills-card">
+            <h4>REACT</h4>
+            <i class="fa-brands fa-react"></i>
+          </div>
+          <div class="skills-card">
+            <h4>PYTHON</h4>
+            <i class="fa-brands fa-python"></i>
+          </div>
+          <div class="skills-card">
+            <h4>SQL</h4>
+            <i class="fa-solid fa-database"></i>
+          </div>
+        </div>
+      </section>
     <script type="module" src="/main.js"></script>
     <script type="text/javascript" src="/src/scripts/vanilla-tilt.min.js"></script>
   </body>

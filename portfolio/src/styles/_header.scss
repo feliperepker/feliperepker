@@ -3,17 +3,19 @@ header{
   width: 100%;
   height: 90px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.61);
+  background-color: rgba(29, 34, 44, 0.829);
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 4;
   
   .logo{
     display: flex;
     margin-left: 10%;
     font-size: 2em;
     color: $contrastclr;
-    font-family: 'Gemunu Libre', sans-serif;
+    font-family: $ffsec;
   
     #left-logo{
       
@@ -89,11 +91,12 @@ header{
         position: absolute;
         top: 0;
         right: 0;
-        background-color: rgba(0, 0, 0, 0.623);
+        background-color: rgba(22, 26, 34, 0.897);
         width: 60vw;
         height: 100vh;
         display: flex;
         justify-content: center;
+        transition: 0.5s ease;
         nav{
             display: flex;
             justify-content: center;
@@ -147,7 +150,7 @@ header{
       width: 70% 
   }
   100%{
-      transform: rotate(45deg) translate(-7px, -4px);
+      transform: rotate(45deg) translate(1px, -5px);
       width: 70%;
   }
 }
@@ -170,14 +173,14 @@ header{
   100%{
       transform: translateY(100%);
       width: 70%;
-      transform: rotate(-45deg) translate(-8px, 6px);
+      transform: rotate(-45deg) translate(-7px, 14px);
 
   }
 }
 @keyframes x-to-ham{
   0%{
       width: 70%;
-      transform: rotate(-45deg) translate(-7px, 3px);
+      transform: rotate(-45deg) translate(-7px, 14px);
   }
 
   30%{
@@ -199,7 +202,7 @@ header{
 }
 @keyframes y-to-ham {
   0%{
-      transform: rotate(45deg) translate(-7px, -4px);
+      transform: rotate(45deg) translate(1px, -5px);
       width: 70%;
   }
  

@@ -5,14 +5,38 @@
 //variables
 $primaryclr:rgb(29, 34, 44);
 $secondaryclr: rgb(9, 153, 179);
-$contrastclr:white;
+$contrastclr:rgb(228, 227, 227);
 $fontfamily:'Inter', sans-serif;
+$ffsec:  'Gemunu Libre', sans-serif;
 
 //scss imports
 @import 'reset';
 @import 'header';
 @import 'main';
+@import 'about';
+@import 'skills';
+
 body{
   font-family: $fontfamily;
   background-color: $primaryclr;
+}
+
+::-webkit-scrollbar{
+  width: 12px;
+  background-color: rgba(155, 155, 155, 0.658);
+  border: 5px solid $primaryclr;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: $secondaryclr;
+  border-radius: 50px;
+  border: 2px solid $primaryclr;
+}
+
+.init-hidden{
+  opacity: 0;
+  transition: opacity 3s linear;
+}
+.init-hidden-off{
+  opacity: 1;
 }

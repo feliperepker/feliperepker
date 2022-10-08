@@ -12,10 +12,24 @@ menuToggle.addEventListener('click', () =>{
 
 
 VanillaTilt.init(document.querySelector(".container-img"), {
-    max: 10,
-    speed: 200,
+    max: 3,
+    speed: 50,
     reverse: true,
     glare: true,
-    "max-glare": 0.1,
+    "max-glare": 0.03,
     perspective: 2000,
   });
+
+const observer = new IntersectionObserver(entries => {
+    Array.from(entries).forEach(entry => {
+        if(entry.intersectionRatio >= 0.3){
+            entry.target.classList.add('init-hidden-off')
+        } 
+    })
+  }, {
+    threshold: [0, 0.5, 1]
+  })
+  Array.from(document.querySelectorAll('.init-hidden')).forEach(element =>{
+    observer.observe(element)
+  })
+  
