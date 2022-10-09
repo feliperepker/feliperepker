@@ -5,6 +5,17 @@
   align-items: center;
   margin-top: 200px;
   height: 80vh;
+
+  p{
+    text-align: center;
+    color: $contrastclr;
+    font-size: 1.3em;
+    margin-top: 90px;
+    max-width: 600px;
+    line-height: 25px;
+    font-weight: 300;
+    transition: opacity 2s linear;
+  }
 }
 .container-skills{
   display: flex;
@@ -18,12 +29,12 @@
   min-width: 130px;
   height: 170px;
   font-size: 20px;
-  background-color: rgb(13, 16, 19);
+  background-color: rgb(35, 39, 43);
   border-radius: 10px 40px 10px 40px;
   text-align: center;
   font-family: $ffsec;
-  border-bottom: 3px solid rgb(23, 68, 78);
-  box-shadow: 0px 0px 10px 0px black;
+  border-bottom: 3px solid rgb(20, 47, 53);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.603);
   cursor: pointer;
   transition: 1s ease-in-out;
   margin-top: 20px;
