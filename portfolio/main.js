@@ -76,7 +76,7 @@ arrayCards.forEach(card => {
               containerCards.classList.add('transition')
               containerCards.classList.remove('transform-back') 
               textSkills.classList.remove('plus-height') 
-            },1000)
+            },700)
             }
        
       }else{
@@ -114,7 +114,7 @@ arrayCards.forEach(card => {
       
       oldCard = card;
       project.style.opacity = 1;
-   }, 1000)
+   }, 700)
    
   })
 })
