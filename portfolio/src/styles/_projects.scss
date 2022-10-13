@@ -33,12 +33,14 @@
     font-size: 1.1em;
     border: none;
     background-color: $primaryclr;
-    border-radius: 15px;
+    border-radius: 7px;
     cursor: pointer;
   }
   p{
     color: $contrastclr;
     font-size: 1em;
+    line-height: 25px;
+    font-weight: 300;
 
   }
   h3{
@@ -61,9 +63,105 @@
 
 
 .visit-link{
-  background: linear-gradient(45deg, slateblue, coral) border-box;
-cursor: pointer;
-border: 3px solid transparent;
-border-radius: 15px;
+  background: linear-gradient(36deg, rgb(241, 139, 5) 0%, rgb(36, 133, 194)) border-box;
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 8px;
+}
+.visit-link:hover{
+ animation: border-rotation 2s infinite ease-in;
+}
 
+@media (max-width: 1000px) {
+  
+  .projects{
+    margin-top: 80px;
+  }
+  
+  
+  .container-card-projects{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .card-projects{
+    width: 80vw;
+    margin-left: 0;
+    
+    p{
+      
+      font-size: 1em;
+    }
+    img{
+      width: 300px;
+    }
+  }
+  
+  
+}
+
+
+
+@keyframes border-rotation {
+  5%{
+    background: linear-gradient(46deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+  }
+  10%{
+    background: linear-gradient(56deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+  }
+  15%{
+    background: linear-gradient(66deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+  }
+  20%{
+    background: linear-gradient(72deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+  }
+  25%{
+    background: linear-gradient(82deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+  }
+  30%{
+    background: linear-gradient(108deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+  }
+  35%{
+    background: linear-gradient(128deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+  }
+  40%{
+    background: linear-gradient(144deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+  }
+  45%{
+    background: linear-gradient(164deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+  }
+  50%{
+   background: linear-gradient(180deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+  }
+  55%{
+    background: linear-gradient(200deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+   }
+  60%{
+    background: linear-gradient(216deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+   }
+   65%{
+    background: linear-gradient(236deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+   }
+   70%{
+    background: linear-gradient(256deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+   }
+   75%{
+    background: linear-gradient(266deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+   }
+   80%{
+    background: linear-gradient(284deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+   }
+   85%{
+    background: linear-gradient(304deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+   }
+   90%{
+    background: linear-gradient(320deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+   }
+   95%{
+    background: linear-gradient(360deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+   }
+  100%{
+   background: linear-gradient(376deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+  }
 }
