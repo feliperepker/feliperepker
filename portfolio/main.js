@@ -22,12 +22,12 @@ VanillaTilt.init(document.querySelector(".container-img"), {
 
 const observer = new IntersectionObserver(entries => {
     Array.from(entries).forEach(entry => {
-        if(entry.intersectionRatio >= 0.3){
+        if(entry.intersectionRatio >= 0.1){
             entry.target.classList.add('init-hidden-off')
         } 
     })
   }, {
-    threshold: [0, 0.5, 1]
+    threshold: [0, 0.2, 0.2]
   })
   Array.from(document.querySelectorAll('.init-hidden')).forEach(element =>{
     observer.observe(element)
@@ -117,4 +117,13 @@ arrayCards.forEach(card => {
    }, 700)
    
   })
+})
+
+
+var coffe = document.querySelector('.cupCoffe')
+var sorry = document.querySelector('.sorry')
+coffe.addEventListener('click', ()=>{
+  console.log('oi')
+  coffe.classList.add('animationcoffe')
+  sorry.classList.remove('hide')
 })

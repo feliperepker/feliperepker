@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 200px;
-  height: 80vh;
+  height: 60vh;
   .column-direction{
     width: 100%;
     display: flex;
@@ -60,7 +60,7 @@
     font-size: 80px;
     color: transparent;
     transition:0.5s ease-in-out;
-    background-image: linear-gradient(36deg, rgba(250,170,7,1) 0%, rgba(227,148,78,1) 38%, rgba(9,130,149,1) 72%, rgba(13,141,223,1) 100%);
+    background-image: linear-gradient(36deg, rgb(16, 89, 150), rgb(33, 231, 182));
     -webkit-background-clip: text;
     background-clip:text ;
   }
@@ -72,6 +72,7 @@
 
 @media (max-width: 1000px) {
   .skills{
+    height: 80vh;
     .column-direction{
       flex-direction: column-reverse;
     }

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .container-card-projects{
   display: grid;
@@ -56,22 +56,69 @@
     border-radius: 10px;
   }
   img:hover{
-    filter: brightness(30%);
+    filter: brightness(80%);
     transition: ease-in-out 1s;
   }
 }
 
 
 .visit-link{
-  background: linear-gradient(36deg, rgb(241, 139, 5) 0%, rgb(36, 133, 194)) border-box;
+  background: linear-gradient(36deg, rgb(16, 89, 150), rgb(33, 231, 182)) border-box;
   cursor: pointer;
   border: 3px solid transparent;
   border-radius: 8px;
 }
 .visit-link:hover{
- animation: border-rotation 2s infinite ease-in;
+ animation: border-rotation 2s infinite;
 }
 
+.invitation{
+  margin-top: 40px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  p{
+      color: $contrastclr;
+      font-size: 20px;
+  }
+  img{
+    height: 70px;
+    margin-left: 40px;
+    cursor: pointer;
+    filter:drop-shadow(0px 5px 7px rgb(0, 0, 0))
+  }
+
+  .animationcoffe{
+    animation: coffe 2s ease forwards;
+  }
+  .sorry{
+    margin-top: 20px;
+    font-size: 0.7em;
+    transition: 10s ease-out;
+  }
+  .hide{
+    opacity: 0;
+  }
+}
+.invitation-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+@keyframes coffe {
+ 
+  60%{
+    transform: rotate(25deg) translate(12px, -6px) ;
+  }
+
+  100%{
+    transform: rotate(87deg) translate(20px, -45px);
+  }
+}
 @media (max-width: 1000px) {
   
   .projects{
@@ -98,70 +145,69 @@
     }
   }
   
-  
 }
 
 
 
 @keyframes border-rotation {
   5%{
-    background: linear-gradient(46deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(46deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
   }
   10%{
-    background: linear-gradient(56deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(56deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
   }
   15%{
-    background: linear-gradient(66deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(66deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
   }
   20%{
-    background: linear-gradient(72deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(72deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
   }
   25%{
-    background: linear-gradient(82deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(82deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
   }
   30%{
-    background: linear-gradient(108deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(108deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
   }
   35%{
-    background: linear-gradient(128deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(128deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
   }
   40%{
-    background: linear-gradient(144deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(144deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
   }
   45%{
-    background: linear-gradient(164deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(164deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
   }
   50%{
-   background: linear-gradient(180deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+   background: linear-gradient(180deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
   }
   55%{
-    background: linear-gradient(200deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(200deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
    }
   60%{
-    background: linear-gradient(216deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(216deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
    }
    65%{
-    background: linear-gradient(236deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(236deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
    }
    70%{
-    background: linear-gradient(256deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(256deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
    }
    75%{
-    background: linear-gradient(266deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(266deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
    }
    80%{
-    background: linear-gradient(284deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(284deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
    }
    85%{
-    background: linear-gradient(304deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(304deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
    }
    90%{
-    background: linear-gradient(320deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(320deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
    }
    95%{
-    background: linear-gradient(360deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+    background: linear-gradient(360deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
    }
   100%{
-   background: linear-gradient(376deg,  rgb(241, 139, 5) 0%, rgb(36, 133, 194) ) border-box;
+   background: linear-gradient(376deg,  rgb(16, 89, 150), rgb(33, 231, 182) ) border-box;
   }
 }
