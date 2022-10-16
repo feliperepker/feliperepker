@@ -21,15 +21,15 @@
         </div>
         <nav>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="init-hidden">
+    <main class="init-hidden" id="about">
       <div class="main-container ">
         <div class="name-container">
           <h1 class="hello">Hello, I am</h1>
@@ -42,13 +42,14 @@
           </div>
         </div>
         <div class="container-icons">
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a target="_blank" href="#"><i class="fa-brands fa-linkedin gradientBlue"></i></a>
+          <a target="_blank" href="https://github.com/feliperepker"><i class="fa-brands fa-github gradientOrange"></i></a>
         </div>
       </div> 
       <div class="container-img">
-        <img src="./src/assets/bf00c2aa-4f85-4a65-ac6e-92845445f273.jpg" alt="">
+        <img src="./src/assets/bf00c2aa-4f85-4a65-ac6e-92845445f273.jpg" alt="A photo of mine.">
       </div>
+      <img class="astronaut" src="https://cdn-icons-png.flaticon.com/512/8697/8697762.png" alt="A little astronaut floating.">
     </main>
       <section class="init-hidden about">
         <h2>About</h2>
@@ -56,35 +57,35 @@
         <p>I love coffe, games and watching chess. Used to do magic tricks when younger, I was kind of good at it.</p>
         <p>Studying Fullstack Web Development with Python and MySQL in EBAC and studying React as my main Web Framework. I am familiar with .NET CORE too.</p>
         <p>Working in a area with focous on digitalization in Logistics.</p>
-        <img src="https://i.pinimg.com/originals/1e/b7/74/1eb774d223c04aa542d5190519ba2a13.png" alt="">
+        <img src="https://i.pinimg.com/originals/1e/b7/74/1eb774d223c04aa542d5190519ba2a13.png" alt="A piece of chess floating.">
       </section>
-      <section class="init-hidden skills">
+      <section class="init-hidden skills" id="skills">
         <h2>Skills</h2>
         <div class="column-direction">
           <div class="container-skills">
             <div class="skills-card">
               <h4>HTML5</h4>
-              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-html5 gradientBlue"></i>
             </div>
             <div class="skills-card">
               <h4>CSS3</h4>
-              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-css3-alt gradientBlue"></i>
             </div>
             <div class="skills-card">
               <h4>SASS</h4>
-              <i class="fa-brands fa-sass"></i>
+              <i class="fa-brands fa-sass gradientBlue"></i>
             </div>
             <div class="skills-card">
               <h4>REACT</h4>
-              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-react gradientBlue"></i>
             </div>
             <div class="skills-card">
               <h4>PYTHON</h4>
-              <i class="fa-brands fa-python"></i>
+              <i class="fa-brands fa-python gradientBlue"></i>
             </div>
             <div class="skills-card">
               <h4>SQL</h4>
-              <i class="fa-solid fa-database"></i>
+              <i class="fa-solid fa-database gradientBlue"></i>
             </div>
           </div>
           <div class="transition-text">
@@ -93,32 +94,32 @@
         </div>
       
       </section>
-      <section class="init-hidden projects">
+      <section class="init-hidden projects" id="projects">
           <h2>Projects</h2>
           <div class="container-card-projects">
             <div class="card-projects">
               <h3>NLW E-Sports</h3>
-              <a href=""><img src="./src/assets/nlw.png" alt=""></a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sequi cumque accusantium minus vitae quia officia unde voluptate, dicta facilis quisquam eveniet reprehenderit nostrum provident quasi doloremque sit suscipit iste!</p>
-              <a href="https://feliperepker.github.io/obpc.com/" class="visit-link"><button>Visitar</button></a>
+              <a target="_blank" href="https://github.com/feliperepker/nlw"><img src="./src/assets/nlw.png" alt="A photo from my project develop in NLW"></a>
+              <p>This project was made in NLW by Rocketseat. The idea was to create a application using React, Tailwind, React Native, Prisma and Node.js.</p>
+              <a target="_blank" href="https://github.com/feliperepker/nlw" class="visit-link"><button>Visit</button></a>
             </div>
             <div class="card-projects">
               <h3>Components Delivery</h3>
-              <a href="#"><img src="./src/assets/deliverytablet.png" alt=""></a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sequi cumque accusantium minus vitae quia officia unde voluptate, dicta facilis quisquam eveniet reprehenderit nostrum provident quasi doloremque sit suscipit iste!</p>
-              <a href="https://feliperepker.github.io/obpc.com/" class="visit-link"><button>Visitar</button></a>
+              <a target="_blank" href="https://github.com/feliperepker/deliveryapp"><img src="./src/assets/deliverytablet.png" alt="A photo from my project."></a>
+              <p>This is a application I developed to solve a problem in a company. It's a screen that can ask to a component to be delivery and another screen to show a timer to delivery the component. Made with React and .NET.</p>
+              <a target="_blank" href="https://github.com/feliperepker/deliveryapp" class="visit-link"><button>Visit</button></a>
             </div>
             <div class="card-projects">
               <h3>Design System Project</h3>
-              <a href="https://feliperepker.github.io/lab-ds/"><img src="./src/assets/ds-lab.png" alt=""></a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sequi cumque accusantium minus vitae quia officia unde voluptate, dicta facilis quisquam eveniet reprehenderit nostrum provident quasi doloremque sit suscipit iste!</p>
-              <a href="https://feliperepker.github.io/obpc.com/" class="visit-link"><button>Visitar</button></a>
+              <a target="_blank" href="https://feliperepker.github.io/lab-ds/"><img src="./src/assets/ds-lab.png" alt="A photo from my project."></a>
+              <p>Project made in Ignite Lab on Rocketseat, the idea behind the project was to create a Design System using Figma, React and Storybook.</p>
+              <a target="_blank" href="https://feliperepker.github.io/lab-ds/" class="visit-link"><button>Visit</button></a>
             </div>
             <div class="card-projects">
               <h3>OBPC Website</h3>
-              <a href="https://feliperepker.github.io/obpc.com/"><img src="./src/assets/obpcweb.png" alt=""></a>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sequi cumque accusantium minus vitae quia officia unde voluptate, dicta facilis quisquam eveniet reprehenderit nostrum provident quasi doloremque sit suscipit iste!</p>
-              <a href="https://feliperepker.github.io/obpc.com/" class="visit-link"><button>Visitar</button></a>
+              <a target="_blank" href="https://feliperepker.github.io/obpc.com/"><img src="./src/assets/obpcweb.png" alt="A photo from my project."></a>
+              <p>First project that I developed for my self. It's a static page created for my local church using JS and SASS. In this project I started to play more with animation in CSS and lear how to do modals with JS.</p>
+              <a target="_blank" href="https://feliperepker.github.io/obpc.com/" class="visit-link"><button>Visit</button></a>
             </div>
           </div>
 
@@ -126,13 +127,24 @@
             <div class="invitation-text">
                <p>Please, take a coffe! I'm working on my next project..</p>
                <p class="hide sorry">Sorry for that!</p> 
+               <img class="cupCoffe" src="https://cdn-icons-png.flaticon.com/512/961/961481.png" alt="A photo from a coffe that drops when click.">
               </div>
-            <img class="cupCoffe" src="https://cdn-icons-png.flaticon.com/512/3361/3361122.png" alt="">
+          
           </div>
       </section>
-      <section class="contacts">
-
+      <section class="contacts init-hidden" id="contacts">
+        <h2>Contacts</h2>
+          <p>Let's chat!</p>
+        <div class="container-icons">
+          <a target="_blank" href="#"><i class="fa-brands fa-linkedin gradientOrange"></i></a>
+          <a target="_blank" href="https://github.com/feliperepker"><i class="fa-brands fa-github gradientBlue"></i></a>
+        </div>
+        <img class="last-astronaut" src="https://cdn-icons-png.flaticon.com/512/1049/1049387.png" alt="A little dog floating">
+        <img class="stars" src="https://cdn-icons-png.flaticon.com/512/2211/2211744.png" alt="A galaxy on background">
       </section>
+      <footer>
+       <p>Thank you for get in to the end!</p>
+      </footer>
     <script type="module" src="/main.js"></script>
     <script type="text/javascript" src="/src/scripts/vanilla-tilt.min.js"></script>
   </body>

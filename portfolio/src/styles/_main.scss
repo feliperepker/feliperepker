@@ -37,7 +37,7 @@ main{
   .dynamic-text{
     margin-left: 10px;
     font-size: 40px;
-    color:  rgb(61, 121, 170);
+    color:  rgb(61, 163, 170);
 
     span{
       position: relative;
@@ -66,7 +66,7 @@ span::after{
     font-size: 50px;
     font-weight: 600;
     margin-bottom: 10px;
-    color:  $secondaryclr;
+    color:  rgb(177, 123, 23);
     margin-left: 10px;
   }
 }
@@ -87,15 +87,25 @@ span::after{
     font-size: 5vw;
     color: $contrastclr;
     transition:0.5s ease-in-out;
-    background-image: linear-gradient(36deg, rgb(16, 89, 150), rgb(33, 231, 182));  
-    -webkit-background-clip: text;
-    background-clip:text ;
+    
   }
   
 }
 i:hover{
   color: transparent;
 }
+
+.gradientBlue{
+  background-image: linear-gradient(36deg, rgb(16, 89, 150), rgb(33, 231, 182));  
+ -webkit-background-clip: text;
+  background-clip:text ;
+}
+.gradientOrange{
+  background-image: linear-gradient(36deg, rgb(150, 41, 7),rgb(196, 88, 16) ,rgb(248, 203, 4));  
+  -webkit-background-clip: text;
+   background-clip:text ;
+}
+
 @keyframes typing {
   100%{
     left: 95%;
@@ -108,7 +118,29 @@ i:hover{
     border-left: 2px transparent;
   }
 }
-
+@media (max-width:1300px) {
+  .main-container{
+    margin-top: 40px;
+    .hello{
+      font-size: 2em;
+    }
+      .my-name{
+        font-size: 2em;
+      }
+  }
+  .wrapper{
+    .static-text{
+      font-size: 1.4em;
+    }
+    .dynamic-text{
+      font-size: 1.4em;
+    }
+    
+  }
+  span::after{
+      height: 100%;
+    }
+}
 @media (max-width:1000px) {
 
   main{

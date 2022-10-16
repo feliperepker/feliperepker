@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap');
 //variables
-$primaryclr:rgb(31, 32, 37);
-$secondaryclr: rgb(37, 204, 162);
-$contrastclr:rgb(202, 202, 202);
+$primaryclr:rgb(30, 32, 34);
+$secondaryclr: rgb(51, 158, 153);
+$contrastclr:rgb(197, 197, 197);
 $fontfamily:'Inter', sans-serif;
 $ffsec:  'Gemunu Libre', sans-serif;
 
@@ -17,6 +17,8 @@ $ffsec:  'Gemunu Libre', sans-serif;
 @import 'skills';
 @import 'projects';
 @import 'contacts';
+@import 'footer';
+
 
 body{
   font-family: $fontfamily;

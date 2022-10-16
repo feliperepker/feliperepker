@@ -1,3 +1,69 @@
 .contacts{
-  height: 40vh;
+  margin-top: 80px;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  p{
+    font-size: 1.3em;
+    color: $contrastclr;
+  }
+}
+
+.last-astronaut{
+  height: 100px;
+  position: absolute;
+  top: auto;
+  margin-top: 160px;
+  right: 130px;
+  filter:brightness(80%);
+  animation: astronaut-dog 6s ease infinite;
+
+}
+.stars{
+  height: 300px;
+  position: absolute;
+  z-index: -1;
+  top: auto;
+  right: 50px;
+  margin-top: 70px;
+  filter: grayscale(100%) brightness(70%);
+}
+
+
+
+@media (max-width:1000px) {
+  .stars{
+    margin-top: 180px;
+  }
+  .last-astronaut{
+    margin-top: 260px;
+    animation: astronaut-dog-mobile 4s ease infinite;
+  }
+}
+
+
+
+@keyframes astronaut-dog-mobile {
+  50%{
+    margin-top: 280px;
+  
+  }
+  100%{
+    margin-top: 260px;
+  
+  }
+}
+
+
+@keyframes astronaut-dog {
+  50%{
+    margin-top: 180px;
+  
+  }
+  100%{
+    margin-top: 160px;
+  
+  }
 }

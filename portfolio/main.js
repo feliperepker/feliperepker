@@ -86,12 +86,12 @@ arrayCards.forEach(card => {
           
         }
         if(card == arrayCards[1]){
-          textSkills.innerHTML = "I love CSS so much, It's facinating what we can do with CSS. I try to do a lot of animations and things that I don't use before to learn more and more about CSS."
+          textSkills.innerHTML = "I love CSS, It's facinating what we can do with CSS. I try to do a lot of animations and things that I don't use before to learn more and more about CSS."
           
           
         }
         if(card == arrayCards[2]){
-          textSkills.innerHTML = "I used a lot of SCSS in my projects, it's easiear to create variables with SCSS and to interact with DOM elements. It's so good how you can keep your files organized with SCSS."
+          textSkills.innerHTML = "I used a lot of SASS in my projects, it's easiear to create variables with SASS and to interact with DOM elements. It's so good how you can keep your files organized with SASS too."
           
           
         }
@@ -101,7 +101,7 @@ arrayCards.forEach(card => {
           
         }
         if(card == arrayCards[4]){
-          textSkills.innerHTML = "I'm learning Back-end Python in EBAC, using Django, Ngnix, Gunicorn and integrate this in a Virtual Box machine using Linux."
+          textSkills.innerHTML = "I'm learning Back-end Python in EBAC, using Django, Ngnix, Gunicorn and upload this in a Virtual Box machine using Linux."
           
           
         }
@@ -127,3 +127,25 @@ coffe.addEventListener('click', ()=>{
   coffe.classList.add('animationcoffe')
   sorry.classList.remove('hide')
 })
+  const anchor = document.querySelector('.stars');
+  const astronaut = document.querySelector('.last-astronaut')
+  const rekt = anchor.getBoundingClientRect();
+  const anchorX = rekt.left + rekt.width / 2;
+  const anchorY = rekt.top + rekt.height / 2;
+
+document.addEventListener('mousemove', (e) =>{
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
+  const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
+
+ 
+  astronaut.style.transform = `rotate(${ angleDeg}deg)`;
+})
+
+function angle(cx, cy, ex, ey){
+  const dy = ey - cy;
+  const dx = ex - cx;
+  const rad =Math.atan2(dy, dx);
+  const deg = rad * 180 / Math.PI;
+  return deg;
+}
