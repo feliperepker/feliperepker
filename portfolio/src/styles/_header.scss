@@ -10,7 +10,12 @@ header{
   position: fixed;
   z-index: 4;
   
+  .logo-link{
+    text-decoration: none;
+    margin-left: 10vw;
+  }
   .logo{
+    
     display: flex;
     margin-left: 10%;
     font-size: 2em;
