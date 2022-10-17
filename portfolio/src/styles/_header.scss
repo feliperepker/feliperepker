@@ -23,17 +23,15 @@ header{
     font-family: $ffsec;
   
     #left-logo{
-      
-      font-size: 1em;
-      transform:  rotate(-45deg) translate(-14px, 13px);
-      color: $secondaryclr;
+      transform:  rotate(131deg) translate(18px, -21px);
+      width: 15px;
+      height: 20px;
     }
     
     #right-logo{
-     
-      font-size: 1em;
-      transform:  rotate(-45deg) translate(13px, -13px);
-      color: $secondaryclr;
+      width: 15px;
+      height: 20px;
+      transform:  rotate(-45deg) translate(7px, -12px);
     }
     
   }
@@ -230,12 +228,12 @@ header{
 
 @keyframes logo-animation-left {
   100%{
-    transform:  rotate(135deg) translate(-43px, -20px);
+    transform:  rotate(315deg) translate(39px, 21px);
   }
 }
 
 @keyframes logo-animation-right {
   100%{
-    transform:  rotate(134deg) translate(43px, 15px);
+    transform:  rotate(131deg) translate(48px, 14px);
   }
 }

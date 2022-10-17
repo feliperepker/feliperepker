@@ -186,3 +186,16 @@ span::after{
   }
 }
 }
+
+@media (max-width: 500px) {
+  main{
+    .main-container{
+      .hello{
+        font-size: 1.4em;
+      }
+        .my-name{
+          font-size: 1.7em;
+        }
+    }
+  }
+}
