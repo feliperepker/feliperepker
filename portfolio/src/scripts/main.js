@@ -22,12 +22,12 @@ VanillaTilt.init(document.querySelector(".container-img"), {
 
 const observer = new IntersectionObserver(entries => {
     Array.from(entries).forEach(entry => {
-        if(entry.intersectionRatio >= 0.1){
+        if(entry.intersectionRatio >= 0.05){
             entry.target.classList.add('init-hidden-off')
         } 
     })
   }, {
-    threshold: [0, 0.2, 0.2]
+    threshold: [0, 0, 0.1]
   })
   Array.from(document.querySelectorAll('.init-hidden')).forEach(element =>{
     observer.observe(element)
