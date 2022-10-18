@@ -81,34 +81,22 @@ arrayCards.forEach(card => {
        
       }else{
         if (card == arrayCards[0]){
-          textSkills.innerHTML = "HTML was the first skill that I learned, I used in a lot of my projects, in one project expecific a learn a lot of HTML in how to create a form. It's not easy to learn about DOM elements and how to integrate them with JS."
-          
-          
+          textSkills.innerHTML = "HTML was the first skill that I learned, I used in a lot of my projects, in one project specific a learn a lot of HTML in how to create a form.The challege is learning about DOM elements and how to integrate them with JS."
         }
         if(card == arrayCards[1]){
-          textSkills.innerHTML = "I love CSS, It's facinating what we can do with CSS. I try to do a lot of animations and things that I don't use before to learn more and more about CSS."
-          
-          
+          textSkills.innerHTML = "I love CSS, It's facinating what we can do with CSS. I try to do a lot of animations and things that I don't use before to learn more and more about CSS."          
         }
         if(card == arrayCards[2]){
           textSkills.innerHTML = "I used a lot of SASS in my projects, it's easiear to create variables with SASS and to interact with DOM elements. It's so good how you can keep your files organized with SASS too."
-          
-          
         }
         if(card == arrayCards[3]){
           textSkills.innerHTML = "React is new for me, I learned a little in a recent project and I'm trying to use more in everything I do."
-          
-          
         }
         if(card == arrayCards[4]){
-          textSkills.innerHTML = "I'm learning Back-end Python in EBAC, using Django, Ngnix, Gunicorn and upload this in a Virtual Box machine using Linux."
-          
-          
+          textSkills.innerHTML = "I'm learning Back-end Python in EBAC, using Django, Ngnix, Gunicorn and upload this in a Virtual Box machine using Linux."       
         }
         if(card == arrayCards[5]){
-          textSkills.innerHTML = "Part of my course in EBAC teach's SQL to create a database, relations and use the back-end to interact with the data source."
-          
-          
+          textSkills.innerHTML = "Part of my course in EBAC teach's SQL to create a database, relations and use the back-end to interact with the data source."   
         }
       }
       
